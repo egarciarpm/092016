@@ -144,68 +144,103 @@ if($_POST["message"]) {
 
 
 <!--CONTACTFORM-->
-<div class="container col-xs-10 col-xs-offset-1">
-    <h2 class="page-header">Send our team a message.</h2>
-  <form method="post" action="contact.php">
-    <div class="form-group row">
-      <label for="inputEmail" class="col-sm-2 col-form-label">Email:</label>
-      <div class="col-sm-10">
-        <input name="message" type="email" class="form-control" id="inputEmail" placeholder="Email">
-      </div>
-    </div>
-    <div class="form-group row">
-      <label for="inputName" class="col-sm-2 col-form-label">Name:</label>
-      <div class="col-sm-10">
-        <input name="message" type="text" class="form-control" id="inputName" placeholder="Name">
-      </div>
-    </div>
-     <div class="form-group row">
-      <label for="inputPhone" class="col-sm-2 col-form-label">Phone:</label>
-      <div class="col-sm-10">
-        <input name="message" type="tel" class="form-control" id="inputPhone" placeholder="Phone">
-      </div>
-    </div>
-    <div class="form-group row">
-      <label for="inputCname" class="col-sm-2 col-form-label">Company Name:</label>
-      <div class="col-sm-10">
-        <input name="message" type="tel" class="form-control" id="inputCname" placeholder="Company Name">
-      </div>
-    </div>
-    <div class="form-group">
-  <label for="comment">Comment:</label>
-  <textarea name="message" class="form-control" rows="5" id="comment"></textarea>
-</div>
-    <fieldset class="form-group row">
-        <div class="form-group row">
-      <label class="col-sm-2">PreRegister-</label>
-      <hr>
-      <div class="col-sm-10 center-block">
-        <div class="form-check">
-          <label class="form-check-label">
-            <input name="message" class="form-check-input" type="checkbox"> RPM on Cloud
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input name="message" class="form-check-input" type="checkbox"> RPM for Android
-          </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input name="message" class="form-check-input" type="checkbox"> RPM for Ipad
-          </label>
-        </div>
-      </div>
-    </div>
-    </fieldset>
-  
-    <div class="form-group row">
-      <div class="offset-sm-2 col-sm-10">
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </div>
-    </div>
-  </form>
-</div>
+<form name="contactform" method="post" action="send_form_email.php">
+ 
+<table width="450px">
+ 
+<tr>
+ 
+ <td valign="top">
+ 
+  <label for="full_name">Full Name *</label>
+ 
+ </td>
+ 
+ <td valign="top">
+ 
+  <input  type="text" name="full_name" maxlength="50" size="30">
+ 
+ </td>
+ 
+</tr>
+ 
+<tr>
+ 
+ <td valign="top">
+ 
+  <label for="company_name">Company Name *</label>
+ 
+ </td>
+ 
+ <td valign="top">
+ 
+  <input  type="text" name="company_name" maxlength="50" size="30">
+ 
+ </td>
+ 
+</tr>
+ 
+<tr>
+ 
+ <td valign="top">
+ 
+  <label for="email">Email Address *</label>
+ 
+ </td>
+ 
+ <td valign="top">
+ 
+  <input  type="text" name="email" maxlength="80" size="30">
+ 
+ </td>
+ 
+</tr>
+ 
+<tr>
+ 
+ <td valign="top">
+ 
+  <label for="telephone">Telephone Number</label>
+ 
+ </td>
+ 
+ <td valign="top">
+ 
+  <input  type="text" name="telephone" maxlength="30" size="30">
+ 
+ </td>
+ 
+</tr>
+ 
+<tr>
+ 
+ <td valign="top">
+ 
+  <label for="comments">Comments *</label>
+ 
+ </td>
+ 
+ <td valign="top">
+ 
+  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+ 
+ </td>
+ 
+</tr>
+ 
+<tr>
+ 
+ <td colspan="2" style="text-align:center">
+ 
+  <input type="submit" value="Submit">   <a href="">Email Form</a>
+ 
+ </td>
+ 
+</tr>
+ 
+</table>
+ 
+</form>
 <!--/CONTACTFORM-->
 
 
