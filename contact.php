@@ -1,3 +1,11 @@
+
+<?php
+if($_POST["message"]) {
+    mail("egarciarpm@gmail.com", "Form to email message", $_POST["message"], "From: Contact@auctionrpm.com");
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>AuctionRPM Software-Home</title>
+    <title>AuctionRPM Software-Contact</title>
 
     <!-- Bootstrap -->
     <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
@@ -35,7 +43,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="defaultNavbar1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+        <li><a href="index.html">Home</a></li>
          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Add-Ons<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="cloud.html">AuctionRPM on Cloud</a></li>
@@ -61,7 +69,7 @@
            
           </ul>
         </li>
-         <li><a href="contact.php">Contact Us</a></li>
+         <li class="active"><a href="contact.html">Contact Us<span class="sr-only">(current)</span></a></li>
          <li><a href="cart.html">Shopping Cart</a></li>
       </ul>
     </div>
@@ -73,16 +81,18 @@
 
 
 
+
 <!--HEADER-->
 <header>
   <div class="jumbotron" id="defaulthead">
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <h1 class="text-center"><img class="headerlogo" src="images/logo.png" width="175" alt="logo"></h1>
-          <h2 class="text-center headerdesc1">Live Auction Management Suite</h2>
+
+          <h1 class="text-center headerdesc">Contact Us</h1>
+          <p class="text-center text-muted">AuctionRPM Software Suite</p>
           <p>&nbsp;</p>
-          <p class="text-center"><a class="btn btn-primary btn-lg" href="freetrial.html" role="button">FREE TRIAL</a> </p>
+          <p class="text-center"><a class="btn btn-primary btn-lg" href="trial.html" role="button">Free Trial</a> </p>
         </div>
       </div>
     </div>
@@ -102,117 +112,87 @@
 </div>
 <!--/PROMOTION-->
 
-<div class="page-header">
-    <h1 class="text-center">About Us</h1>
-    <h3 class="text-center">Our flagship product, AuctionRPM, was first marketed in early 2002. AuctionRPM
-is a stand-alone auction management tool.
-Since then, AuctionRPM Software has evolved into an industry leader, thanks in
-large part to listening and responding to the ever-changing needs of the auction
-industry. To this day and into the future, AuctionRPM Software continues to offer
-affordable, quality software for the auctioneering and commercial communities.
-    </h3>
 
+<div class="row well">
+<!--CONTACTS-->
+<div class="col-md-4 col-sm-12">
+    <h3 class="page-header">General Information</h3>
+    
+    <p>Mike - General Manager</p>
+    <p>Phone - (209)588-1232 <i> ex-1004</i></p>
+    <a  href="mailto:info@auctionrpm.com">info@auctionrpm.com</a>
+    <hr>
 </div>
-<!--MAINCONTENT-->
-<div class="row">
-  <h1 class="text-center page-header">CLICK ON LOGOS FOR MORE INFORMATION</h1>
-  <div class="text-center center-block suite"> <img class="img suiteimg rpmhead" alt="140x140" style="width: 250px;" src="images/rpmsoftware.png" data-holder-rendered="true">
-        <h3 class="page-header rpmshort">Auction Management Software</h3>
-        <div class="rpmdesc">
-            <h3>Since day one we have listened to auctioneers all over the world to have constructed the most versatile and comprehensive auction management software on the market:</h3>
-              <h5><ul class="text-center center-block">
-				<li>-Manage Consignors, Inventory, Customers, and Auctions</li>
-				<li>-Full Accounting System And Transaction Invoicing</li>
-				<li>-Directly Print Consignment Checks</li>
-				<li>-Advertise Your Auctions Online Via Catalogue And Email</li>
-				<li>-Bid Entry For Lotted And Non-Lotted Auctions</li>
-				<li>-Make And Auto-Complete Custom Forms</li>
-				<li>-Import Existing Data With Ease</li>
-				<li>-Speed Up Bidder Registration With Driver License Scanning</li>
-				<li>-Over 200 Built-In Custom Reports, Allow For Easy Analysis</li> 
-			  </ul>
-              </p><a href="trial.html">Free Trial</a></p>
-            </h5>
-            <hr>
-            <!--IntroVideo-->
-  <div class="well well-lg">
-  <div class="container">
-    <div class="col-sm-6">
-      <div  class="embed-responsive embed-responsive-16by9">
-        <iframe width="560" height="315" id="videoview" name="videoview" src="https://www.youtube.com/embed/ctAL3rMUXgY?rel=0&amp;controls=0&amp;showinfo=1" frameborder="1" allowfullscreen></iframe>
-      </div>   
-    </div>
-
-    <div class="col-sm-6">
-      <h3 id="videotitle" class="page-header">Introduction Video</h3>
-      <h3 id="videodescription">Welcome to AuctionRPM Software's Video Tutorial section. This Introduction Video will tell you a little about some of the features that auctionRPM offers. If you would like to learn more about AuctionRPM please click on the links below for detailed videos on specific functions.</h3>
-    </div>
-    <a class="btn btn-info center-text block-center" href="video.html">Video Tutorials</a>
-  </div>
+<div class="col-md-4 col-sm-12">
+    <h3 class="page-header">Technical Support</h3>
+   
+    <p>Eli - Support Manager</p>
+    <p>Phone - (209)588-1232 <i> ex-1002</i></p>
+    <a  href="mailto:support@auctionrpm.com">support@auctionrpm.com</a>
+     <hr>
 </div>
-<!--/IntroVideo-->
-        </div>
-      </div>
-      <div class="col-sm-4 col-xs-12 text-center suite1head"> <img class="img suiteimg" alt="140x140" style="width: 250px;" src="images/rpmcloud.png" data-holder-rendered="true">
-         <h3 class="page-header suite1short">Online Database and Backup Storage</h3>
-        <p id="suite1desc">Deploy your database or backups on the cloud. This will not only secure your database but it will give you the ability to access your database from anywhere you can access the internet...<a href="auctionrpm.html">learn more</a></p>
-      </div>
-      <div class="col-sm-4 col-xs-12 text-center suite2head"><img class="img suiteimg" alt="140x140" style="width: 250px;" src="images/rpmandroid.png" data-holder-rendered="true">
-        <h3 class="page-header suite2short">AuctionRPM for Android devices</h3>
-        <p id="suite2desc">Take your auctions on the go with AuctionRPM for Android. Gather and store inventory information, register bidders, view live auction statistics, ...<a href="mobile.html">learn more</a></p>
-      </div>
-     
-      
-      <div class="col-sm-4 col-xs-12 text-center suite3head"><img class="img suiteimg" alt="140x140" style="width: 250px;" src="images/rpmipad.png" data-holder-rendered="true">
-       <h3 class="page-header suite3short">AuctionRPM for Ipad devices</h3>
-        <p id="suite3desc">Take your auctions on the go with AuctionRPM for Ipad. Gather and store inventory information, register bidders, view live auction statistics, ...<a href="mobile.html">learn more</a></p>
-      </div>
+<div class="col-md-4 col-sm-12">
+    <h3 class="page-header">Sales</h3>
+    
+    <p>John - Sales Manager </p>
+    <p>Phone - (209)588-1232 <i> ex-1001</i></p>
+    <a  href="mailto:sales@auctionrpm.com">sales@auctionrpm.com</a>
+    <hr>
+</div>
+<!--/CONTACTS-->
+</div>
 
-<div class="container well well-lg col-xs-10 col-xs-offset-1">
-  <form>
-    <h3 class="page-header">Register for upcoming products</h3>
+
+<!--CONTACTFORM-->
+<div class="container col-xs-10 col-xs-offset-1">
+    <h2 class="page-header">Send our team a message.</h2>
+  <form method="post" action="contact.php">
     <div class="form-group row">
       <label for="inputEmail" class="col-sm-2 col-form-label">Email:</label>
       <div class="col-sm-10">
-        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+        <input name="message" type="email" class="form-control" id="inputEmail" placeholder="Email">
       </div>
     </div>
     <div class="form-group row">
       <label for="inputName" class="col-sm-2 col-form-label">Name:</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="inputName" placeholder="Name">
+        <input name="message" type="text" class="form-control" id="inputName" placeholder="Name">
       </div>
     </div>
      <div class="form-group row">
       <label for="inputPhone" class="col-sm-2 col-form-label">Phone:</label>
       <div class="col-sm-10">
-        <input type="tel" class="form-control" id="inputPhone" placeholder="Phone">
+        <input name="message" type="tel" class="form-control" id="inputPhone" placeholder="Phone">
       </div>
     </div>
     <div class="form-group row">
       <label for="inputCname" class="col-sm-2 col-form-label">Company Name:</label>
       <div class="col-sm-10">
-        <input type="tel" class="form-control" id="inputCname" placeholder="Company Name">
+        <input name="message" type="tel" class="form-control" id="inputCname" placeholder="Company Name">
       </div>
     </div>
+    <div class="form-group">
+  <label for="comment">Comment:</label>
+  <textarea name="message" class="form-control" rows="5" id="comment"></textarea>
+</div>
     <fieldset class="form-group row">
-        <div class="form-group row center-block">
+        <div class="form-group row">
       <label class="col-sm-2">PreRegister-</label>
       <hr>
-      <div class="col-sm-10 ">
+      <div class="col-sm-10 center-block">
         <div class="form-check">
           <label class="form-check-label">
-            <input class="form-check-input" type="checkbox"> RPM on Cloud
+            <input name="message" class="form-check-input" type="checkbox"> RPM on Cloud
           </label>
         </div>
         <div class="form-check">
           <label class="form-check-label">
-            <input class="form-check-input" type="checkbox"> RPM for Android
+            <input name="message" class="form-check-input" type="checkbox"> RPM for Android
           </label>
         </div>
         <div class="form-check">
           <label class="form-check-label">
-            <input class="form-check-input" type="checkbox"> RPM for Ipad
+            <input name="message" class="form-check-input" type="checkbox"> RPM for Ipad
           </label>
         </div>
       </div>
@@ -220,16 +200,17 @@ affordable, quality software for the auctioneering and commercial communities.
     </fieldset>
   
     <div class="form-group row">
-      <div class="center-block">
+      <div class="offset-sm-2 col-sm-10">
         <button type="submit" class="btn btn-primary">Submit</button>
       </div>
     </div>
   </form>
-  </div>
 </div>
-<!--/MAIN CONTENT-->
+<!--/CONTACTFORM-->
 
-<hr>
+
+
+
 
 
 
